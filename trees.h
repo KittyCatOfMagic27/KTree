@@ -22,11 +22,6 @@ namespace kt{
       
       Tree(){}
       
-      ~Tree(){
-        storage.~vector();
-        connections.~unordered_map();
-      }
-      
       void push_back(T x){
         storage.push_back(x);
       }
